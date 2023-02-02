@@ -1,0 +1,112 @@
+/* トップページに関して */
+
+/* ヘッダー画像の上のテキスト */
+.image-text {
+	position: relative;
+	color: white;
+	/*文字は白に*/
+	font-weight: bold;
+	/*太字に*/
+	font-size: 2em;
+	/*サイズ2倍*/
+	font-family: Quicksand, sans-serif;
+	/*Google Font*/
+	top: 0;
+	left: 0;
+}
+.image-text p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0;
+}
+.image-text a:hover {
+	background: rgba(255, 0, 0, 0.3);
+}
+
+/* ヘッダーナビメニュー */
+#g_navi {
+	background: #2e1200;
+}
+#g_navi ul {
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 3%;
+	width: 94%;
+	max-width: 100%;
+	list-style-type: none;
+}
+#g_navi ul li {
+	position: relative;
+	float: left;
+	width: 19%;
+}
+#g_navi ul li:first-child::before {
+	position: absolute;
+	display: block;
+	content: "";
+	top: 25%;
+	left: 0px;
+	width: 1px;
+	height: 50%;
+	background-color: #976d52;
+}
+#g_navi ul li::after {
+	position: absolute;
+	display: block;
+	content: "";
+	top: 25%;
+	right: 0px;
+	width: 1px;
+	height: 50%;
+	background-color: #976d52;
+}
+#g_navi ul li a {
+	display: block;
+	padding: 20px 0px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+#g_navi ul li a:hover {
+	background-color: #472108;
+}
+
+/* SNSアイコン */
+.icon-position {
+	text-align: right;
+	padding: 10px;
+}
+
+/* お知らせに関して */
+.info-menu {
+	width: fit-content;
+	margin: auto;
+}
+
+/* トップメッセージ全般 */
+.main-text {
+	text-align: center;
+}
+
+/* フッター関係 */
+.wrapper{
+  min-height: 100vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 120px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+footer{
+	width: 100%;
+	background-color: #89c7de;
+	color: #fff;
+	text-align: center;
+	padding: 0px 0;
+	position: absolute;/*←絶対位置*/
+	bottom: 0; /*下に固定*/
+}

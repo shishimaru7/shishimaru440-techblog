@@ -1,0 +1,155 @@
+/* 個々の投稿記事 */
+/* ヘッダー画像の上のテキスト */
+.image-text {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: Quicksand, sans-serif;
+  top: 0;
+  left: 0;
+}
+
+.image-text p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+.image-text a:hover {
+  background: rgba(255, 0, 0, 0.3);
+}
+
+/* ヘッダーナビメニュー */
+#g_navi {
+  background: #2e1200;
+}
+
+#g_navi ul {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 3%;
+  width: 94%;
+  max-width: 100%;
+  list-style-type: none;
+}
+
+#g_navi ul li {
+  position: relative;
+  float: left;
+  width: 19%;
+}
+
+#g_navi ul li:first-child::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 25%;
+  left: 0px;
+  width: 1px;
+  height: 50%;
+  background-color: #976d52;
+}
+
+#g_navi ul li::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 25%;
+  right: 0px;
+  width: 1px;
+  height: 50%;
+  background-color: #976d52;
+}
+
+#g_navi ul li a {
+  display: block;
+  padding: 20px 0px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+#g_navi ul li a:hover {
+  background-color: #472108;
+}
+
+/* ブログの文章 */
+.blog-text {
+  text-align: center;
+}
+.date-text{
+  text-align: right;
+}
+
+/* サンプルコードの表示 */
+.box {
+  border-left: 5px double skyblue;
+  border-right: 5px double skyblue;
+  background-color: #eee;
+  padding: 2em;
+}
+
+.box label {
+  background: #5f9;
+  display: block;
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.box input[type="checkbox"].on-off,
+.box input[type="checkbox"].on-off+div {
+  display: none;
+}
+
+.box input[type="checkbox"].on-off:checked+div {
+  display: block;
+}
+
+.box div {
+  margin: 0 0 20px;
+}
+
+/* 上に戻るボタン */
+#page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+
+#page_top a {
+  background-color: #999;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 20px;
+}
+
+#page_top a:hover {
+  background-color: #666;
+  text-decoration: none;
+}
+
+/* フッター関係 */
+.wrapper{
+  min-height: 100vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 120px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+footer{
+	width: 100%;
+	background-color: #89c7de;
+	color: #fff;
+	text-align: center;
+	padding: 0px 0;
+position: absolute;/*←絶対位置*/
+	bottom: 0; /*下に固定*/
+}

@@ -1,0 +1,167 @@
+/* 過去の作品 */
+/* カラム */
+.wp-block-columns {
+  display: flex;
+  margin-bottom: 1.75em;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.wp-block-column {
+  flex-grow: 1;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+/* カード */
+.l-wrapper_06 {
+  margin: 1rem auto;
+  width: 80%;
+}
+
+.l-wrapper_06:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7px 34px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  transition: all .5s;
+}
+.card_06 {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+.card-img_06 {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+}
+.card-content_06 {
+  padding: 0px 10px 0px;
+}
+.card-title_06 {
+  font-size: 1em;
+  color: #333;
+  font-weight: 700;
+}
+.card-text_06 {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 0.2em;
+}
+.card-link_06 {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+.card-link_06 a {
+  text-decoration: none;
+  color: #4f96f6;
+  margin: 0 10px;
+}
+.card-link_06 a:hover {
+  color: #6bb6ff;
+}
+
+.card-content_06 p {
+  margin-bottom:0;
+}
+
+
+
+/* ヘッダー画像の上のテキスト */
+.image-text {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: Quicksand, sans-serif;
+  top: 0;
+  left: 0;
+}
+
+.image-text p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+.image-text a:hover {
+  background: rgba(255, 0, 0, 0.3);
+}
+
+/* ヘッダーナビメニュー */
+#g_navi {
+  background: #2e1200;
+}
+
+#g_navi ul {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 3%;
+  width: 94%;
+  max-width: 100%;
+  list-style-type: none;
+}
+
+#g_navi ul li {
+  position: relative;
+  float: left;
+  width: 19%;
+}
+
+#g_navi ul li:first-child::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 25%;
+  left: 0px;
+  width: 1px;
+  height: 50%;
+  background-color: #976d52;
+}
+
+#g_navi ul li::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 25%;
+  right: 0px;
+  width: 1px;
+  height: 50%;
+  background-color: #976d52;
+}
+
+#g_navi ul li a {
+  display: block;
+  padding: 20px 0px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+#g_navi ul li a:hover {
+  background-color: #472108;
+}
+
+/* フッター関係 */
+.wrapper{
+  min-height: 100vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 120px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+footer{
+	width: 100%;
+	background-color: #89c7de;
+	color: #fff;
+	text-align: center;
+	padding: 0px 0;
+position: absolute;/*←絶対位置*/
+	bottom: 0; /*下に固定*/
+}
